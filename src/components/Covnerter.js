@@ -49,7 +49,7 @@ function Covnerter() {
             <img src={data.Video_Thumbnail} alt="thumbnail" />
             <div>
               <h1>Title - {data.Title}</h1>
-              <p>Download size - {data.Dowload_size}</p>
+              <p>Download size - {data.Download_Size}</p>
               <button>
                 <a href={`${data.Download_url}`} download>
                   Download
