@@ -1,38 +1,162 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body,
+p,
+h1{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 1.5rem;
+  background: rgb(27, 27, 27);
+  width: 100%;
+}
+
+header span {
+   font-weight: 900;
+   margin: .3rem;
+   font-size: 1.5rem;
+   color: white;
+}
+
+span:nth-child(2){
+  color: blueviolet;
+  transform: translateY(25px);
+}
+
+.main {
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main h1{
+  font-size: 2rem;
+  text-align: center;
+  margin:2rem auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main h1 span {
+  color: blueviolet;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.converter {
+  background: rgb(255, 255, 255);
+  height : auto;
+  padding: 40px 0;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+form .input-box {
+    width: 250px;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: whitesmoke;
+    transition: all .4s linear;
+}
+
+form .input-box:focus {
+  border: 1px solid blue;
+}
+
+button {
+  outline: none;
+  padding: .7rem 1.5rem;
+  margin-top: 15px;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: upp;
+  text-transform: uppercase;
+  color: blueviolet;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: blueviolet;
+  color: white;
+  transform: all .4s ease-in;
+}
+
+@media screen and (min-width : 400px) {
+   .converter {
+     padding-top : 2rem;
+   }
+   form .input-box {
+     margin-right: 10px;
+   }
+}
+
+@media screen and (min-width : 900px) {
+   .details img {
+      width: 400px;
+      height: auto;
+   }
+
+   .main h1 {
+     width: 400px;
+     font-size: 2rem;
+   }
+
+   .instruction {
+     background: whitesmoke;
+     width: 100%;
+   }
+
+   .instruction img {
+     width: 500px;
+     height: auto;
+   }
+}
+
+.details {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.details h1 , p {
+  opacity: .7;
+}
+
+.details h1 {
+   font-size: 16px;
+}
+
+.details button {
+  background: blueviolet !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.details button a {
+  color: white;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.details img {
+  width: 100%;
+  height: auto;
+  border: 1px dashed blueviolet;
+}
+
+.instruction {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
 }
