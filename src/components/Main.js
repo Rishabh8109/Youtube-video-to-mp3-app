@@ -5,10 +5,10 @@ function main() {
     <section className="main">
       <h1>
         Put{" "}
-        <span>Youtube</span> video link here and get audio
+        <span>Youtube</span> video id from youtube url here and get audio
       </h1>
       <p>
-        copy the your video id from youtube url and page in input box
+        copy the your video id from youtube url and paste in input box
       </p>
     </section>
   );
